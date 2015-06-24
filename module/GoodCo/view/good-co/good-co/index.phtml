@@ -1,0 +1,12 @@
+
+<div id="sticky-notes">
+    <?php foreach($goodcos as $goodco):?>
+    <div class="sticky-note">
+        <textarea id="stickynote-<?php echo $goodco->getId() ?>"><?php echo $goodco->getNote() ?></textarea>
+        <a href="#" id="remove-<?php echo $goodco->getId(); ?>"class="delete-sticky">X</a>
+    </div>
+    <?php endforeach; ?>
+    <div id="create">+</div>
+
+</div>
+<div class="clear-both"></div>
